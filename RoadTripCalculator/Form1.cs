@@ -136,7 +136,7 @@ namespace RoadTripCalculator
                 fuelPrice = 0;
             }
 
-            
+            //
         }
 
         public decimal GetCost(decimal milage, decimal mpg, decimal price)
