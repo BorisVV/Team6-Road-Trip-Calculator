@@ -252,6 +252,7 @@
             this.Name = "TripCalc";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Road Trip Calculator";
+            this.Load += new System.EventHandler(this.TripCalc_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

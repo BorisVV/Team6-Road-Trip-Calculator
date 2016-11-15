@@ -104,6 +104,162 @@ namespace RoadTripCalculator
                 return milage;
             }
 
+            if (cboStartLoc.SelectedItem.Equals("Minneapolis") && cboDestination.SelectedItem.Equals("Los Angeles"))
+            {
+                double milage = milesMpls_LA;
+                return milage;
+            }
+
+            if (cboStartLoc.SelectedItem.Equals("Los Angeles") && cboDestination.SelectedItem.Equals("Minneapolis"))
+            {
+                double milage = milesMpls_LA;
+                return milage;
+            }
+
+            if (cboStartLoc.SelectedItem.Equals("New York") && cboDestination.SelectedItem.Equals("Los Angeles"))
+            {
+                double milage = milesLA_NY;
+                return milage;
+            }
+
+            if (cboStartLoc.SelectedItem.Equals("New York") && cboDestination.SelectedItem.Equals("Minneapolis"))
+            {
+                double milage = milesMpls_NY;
+                return milage;
+            }
+
+            if (cboStartLoc.SelectedItem.Equals("New York") && cboDestination.SelectedItem.Equals("Chicago"))
+            {
+                double milage = milesNY_Chicago;
+                return milage;
+            }
+
+            if (cboStartLoc.SelectedItem.Equals("New York") && cboDestination.SelectedItem.Equals("Seattle"))
+            {
+                double milage = milesSeattle_NY;
+                return milage;
+            }
+
+            if (cboStartLoc.SelectedItem.Equals("New York") && cboDestination.SelectedItem.Equals("Washington DC"))
+            {
+                double milage = milesNY_WashDC;
+                return milage;
+            }
+
+            if (cboStartLoc.SelectedItem.Equals("Minneapolis") && cboDestination.SelectedItem.Equals("Seattle"))
+            {
+                double milage = milesMpls_Seattle;
+                return milage;
+            }
+
+            if (cboStartLoc.SelectedItem.Equals("Minneapolis") && cboDestination.SelectedItem.Equals("New York"))
+            {
+                double milage = milesMpls_NY;
+                return milage;
+            }
+
+            if (cboStartLoc.SelectedItem.Equals("Minneapolis") && cboDestination.SelectedItem.Equals("Washinton DC"))
+            {
+                double milage = milesMpls_WashDC;
+                return milage;
+            }
+
+            if (cboStartLoc.SelectedItem.Equals("Chicago") && cboDestination.SelectedItem.Equals("New York"))
+            {
+                double milage = milesNY_Chicago;
+                return milage;
+            }
+
+            if (cboStartLoc.SelectedItem.Equals("Chicago") && cboDestination.SelectedItem.Equals("Washington DC"))
+            {
+                double milage = milesWashDC_Chicago;
+                return milage;
+            }
+
+            if (cboStartLoc.SelectedItem.Equals("Chicago") && cboDestination.SelectedItem.Equals("Seattle"))
+            {
+                double milage = milesSeattle_Chicago;
+                return milage;
+            }
+
+            if (cboStartLoc.SelectedItem.Equals("Los Angeles") && cboDestination.SelectedItem.Equals("New York"))
+            {
+                double milage = milesLA_NY;
+                return milage;
+            }
+
+            if (cboStartLoc.SelectedItem.Equals("Los Angeles") && cboDestination.SelectedItem.Equals("Washington DC"))
+            {
+                double milage = milesLA_WashDC;
+                return milage;
+            }
+
+            if (cboStartLoc.SelectedItem.Equals("Los Angeles") && cboDestination.SelectedItem.Equals("Seattle"))
+            {
+                double milage = milesLA_Seattle;
+                return milage;
+            }
+
+            if (cboStartLoc.SelectedItem.Equals("Seattle") && cboDestination.SelectedItem.Equals("Minneapolis"))
+            {
+                double milage = milesMpls_Seattle;
+                return milage;
+            }
+
+            if (cboStartLoc.SelectedItem.Equals("Seattle") && cboDestination.SelectedItem.Equals("Washington DC"))
+            {
+                double milage = milesSeattle_WashDC;
+                return milage;
+            }
+
+            if (cboStartLoc.SelectedItem.Equals("Seattle") && cboDestination.SelectedItem.Equals("Chicago"))
+            {
+                double milage = milesSeattle_Chicago;
+                return milage;
+            }
+
+            if (cboStartLoc.SelectedItem.Equals("Seattle") && cboDestination.SelectedItem.Equals("New York"))
+            {
+                double milage = milesSeattle_NY;
+                return milage;
+            }
+
+            if (cboStartLoc.SelectedItem.Equals("Seattle") && cboDestination.SelectedItem.Equals("Los Angeles"))
+            {
+                double milage = milesLA_Seattle;
+                return milage;
+            }
+
+            if (cboStartLoc.SelectedItem.Equals("Washington DC") && cboDestination.SelectedItem.Equals("Minneapolis"))
+            {
+                double milage = milesMpls_WashDC;
+                return milage;
+            }
+
+            if (cboStartLoc.SelectedItem.Equals("Washington DC") && cboDestination.SelectedItem.Equals("Seattle"))
+            {
+                double milage = milesSeattle_WashDC;
+                return milage;
+            }
+
+            if (cboStartLoc.SelectedItem.Equals("Washington DC") && cboDestination.SelectedItem.Equals("New York"))
+            {
+                double milage = milesNY_WashDC;
+                return milage;
+            }
+
+            if (cboStartLoc.SelectedItem.Equals("Washington DC") && cboDestination.SelectedItem.Equals("Los Angeles"))
+            {
+                double milage = milesLA_WashDC;
+                return milage;
+            }
+
+            if (cboStartLoc.SelectedItem.Equals("Washington DC") && cboDestination.SelectedItem.Equals("Chicago"))
+            {
+                double milage = milesWashDC_Chicago;
+                return milage;
+            }
+
             else
             {
                 return 0;
@@ -146,5 +302,9 @@ namespace RoadTripCalculator
             return totalCost;
         }
 
+        private void TripCalc_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
