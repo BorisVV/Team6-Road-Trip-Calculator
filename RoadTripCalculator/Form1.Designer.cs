@@ -54,7 +54,7 @@
             // 
             this.txtInputMPG.Location = new System.Drawing.Point(140, 140);
             this.txtInputMPG.Name = "txtInputMPG";
-            this.txtInputMPG.Size = new System.Drawing.Size(129, 20);
+            this.txtInputMPG.Size = new System.Drawing.Size(72, 20);
             this.txtInputMPG.TabIndex = 3;
             // 
             // txtDistTraveled
