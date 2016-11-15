@@ -49,9 +49,10 @@ namespace RoadTripCalculator
 
         private void button1_Click(object sender, EventArgs e)
         {
+            
             try
             {
-
+               
                 decimal mpg = Convert.ToDecimal(txtInputMPG.Text);
                 txtDistTraveled.Text = Convert.ToString(GetDistance());
                 decimal miles = Convert.ToDecimal(GetDistance());
@@ -305,6 +306,11 @@ namespace RoadTripCalculator
         private void TripCalc_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
