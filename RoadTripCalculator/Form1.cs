@@ -48,8 +48,10 @@ namespace RoadTripCalculator
 
 
         private void button1_Click(object sender, EventArgs e)
-        {
-            
+        { //Calculate button performs calculation using the methods GetDistance and GetCost. Displays appropriate information in read-only text boxes.
+
+            txtTripCost.Clear();
+            txtDistTraveled.Clear();
             try
             {
                
@@ -76,8 +78,15 @@ namespace RoadTripCalculator
             }
             catch
             {
+                MessageBox.Show("Invalid MPG entry.", "Invalid Entry.");
+                
+
+
 
             }
+            //Displays when the estimate was generated based on the current DateTime when the calculate button was last pressed.
+            label11.Visible = true;
+            label11.Text = Convert.ToString(DateTime.Now);
 
         }
 
@@ -261,8 +270,10 @@ namespace RoadTripCalculator
                 return milage;
             }
 
+
             else
             {
+                
                 return 0;
             }    
         }
@@ -311,6 +322,35 @@ namespace RoadTripCalculator
         private void btnExit_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void cboDestination_SelectedIndexChanged(object sender, EventArgs e)
+        { //Data Validation for Destination
+            if (cboStartLoc.SelectedItem.Equals(cboDestination.SelectedItem))
+            {
+                MessageBox.Show("Invalid Start/Destination Combination. Please select different starting and ending cities.", "Invalid Trip");
+                cboDestination.Focus();
+            }
+        }
+
+        private void cboStartLoc_SelectedIndexChanged(object sender, EventArgs e)
+        { //Data Validation for Start Location
+            if (cboStartLoc.SelectedItem.Equals(cboDestination.SelectedItem))
+            {
+                MessageBox.Show("Invalid Start/Destination Combination. Please select different starting and ending cities.", "Invalid Trip");
+                cboDestination.Focus();
+            }
+        }
+
+        private void txtInputMPG_TextChanged(object sender, EventArgs e)
+        { //Data validation for MPG entry
+            double mpg;
+            if(!double.TryParse(txtInputMPG.Text, out mpg))
+            {
+                MessageBox.Show("Please enter a valid numeric MPG", "Invalid MPG Entry");
+                txtInputMPG.Clear();
+                txtInputMPG.Focus();
+            }
         }
     }
 }

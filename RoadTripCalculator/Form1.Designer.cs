@@ -47,6 +47,8 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnCalculate = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -56,6 +58,7 @@
             this.txtInputMPG.Name = "txtInputMPG";
             this.txtInputMPG.Size = new System.Drawing.Size(72, 20);
             this.txtInputMPG.TabIndex = 3;
+            this.txtInputMPG.TextChanged += new System.EventHandler(this.txtInputMPG_TextChanged);
             // 
             // txtDistTraveled
             // 
@@ -140,6 +143,7 @@
             this.cboStartLoc.Name = "cboStartLoc";
             this.cboStartLoc.Size = new System.Drawing.Size(129, 21);
             this.cboStartLoc.TabIndex = 1;
+            this.cboStartLoc.SelectedIndexChanged += new System.EventHandler(this.cboStartLoc_SelectedIndexChanged);
             // 
             // cboDestination
             // 
@@ -156,6 +160,7 @@
             this.cboDestination.Name = "cboDestination";
             this.cboDestination.Size = new System.Drawing.Size(129, 21);
             this.cboDestination.TabIndex = 2;
+            this.cboDestination.SelectedIndexChanged += new System.EventHandler(this.cboDestination_SelectedIndexChanged);
             // 
             // label6
             // 
@@ -172,7 +177,7 @@
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(112, 13);
             this.label5.TabIndex = 9;
-            this.label5.Text = "Fuel Price (Per Gallon)";
+            this.label5.Text = "Fuel Price (PPG/Avg.)";
             // 
             // label4
             // 
@@ -188,9 +193,9 @@
             this.label7.AutoSize = true;
             this.label7.Location = new System.Drawing.Point(22, 262);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(49, 13);
+            this.label7.Size = new System.Drawing.Size(94, 13);
             this.label7.TabIndex = 14;
-            this.label7.Text = "Trip Cost";
+            this.label7.Text = "Trip Cost (Approx.)";
             // 
             // label8
             // 
@@ -240,6 +245,25 @@
             this.btnExit.UseVisualStyleBackColor = true;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(22, 286);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(69, 13);
+            this.label10.TabIndex = 18;
+            this.label10.Text = "Estimated At:";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(140, 286);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(41, 13);
+            this.label11.TabIndex = 19;
+            this.label11.Text = "label11";
+            this.label11.Visible = false;
+            // 
             // TripCalc
             // 
             this.AcceptButton = this.btnCalculate;
@@ -247,6 +271,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.btnExit;
             this.ClientSize = new System.Drawing.Size(444, 317);
+            this.Controls.Add(this.label11);
+            this.Controls.Add(this.label10);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnCalculate);
             this.Controls.Add(this.pictureBox1);
@@ -298,6 +324,8 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btnCalculate;
         private System.Windows.Forms.Button btnExit;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label11;
     }
 }
 
