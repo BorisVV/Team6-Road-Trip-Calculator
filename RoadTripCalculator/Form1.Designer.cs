@@ -52,7 +52,7 @@
             // 
             // txtInputMPG
             // 
-            this.txtInputMPG.Location = new System.Drawing.Point(140, 140);
+            this.txtInputMPG.Location = new System.Drawing.Point(140, 136);
             this.txtInputMPG.Name = "txtInputMPG";
             this.txtInputMPG.Size = new System.Drawing.Size(72, 20);
             this.txtInputMPG.TabIndex = 3;
@@ -105,7 +105,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(22, 143);
+            this.label3.Location = new System.Drawing.Point(22, 139);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(31, 13);
             this.label3.TabIndex = 7;
@@ -136,7 +136,7 @@
             "Minneapolis",
             "Washington DC",
             "Seattle"});
-            this.cboStartLoc.Location = new System.Drawing.Point(140, 86);
+            this.cboStartLoc.Location = new System.Drawing.Point(140, 82);
             this.cboStartLoc.Name = "cboStartLoc";
             this.cboStartLoc.Size = new System.Drawing.Size(129, 21);
             this.cboStartLoc.TabIndex = 1;
@@ -152,7 +152,7 @@
             "Minneapolis",
             "Washington DC",
             "Seattle"});
-            this.cboDestination.Location = new System.Drawing.Point(140, 113);
+            this.cboDestination.Location = new System.Drawing.Point(140, 109);
             this.cboDestination.Name = "cboDestination";
             this.cboDestination.Size = new System.Drawing.Size(129, 21);
             this.cboDestination.TabIndex = 2;
@@ -195,7 +195,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(22, 89);
+            this.label8.Location = new System.Drawing.Point(23, 85);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(73, 13);
             this.label8.TabIndex = 15;
@@ -204,7 +204,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(22, 116);
+            this.label9.Location = new System.Drawing.Point(23, 112);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(60, 13);
             this.label9.TabIndex = 16;
